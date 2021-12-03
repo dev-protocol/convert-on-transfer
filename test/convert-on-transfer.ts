@@ -3,11 +3,7 @@ import { Signer } from 'ethers'
 import { solidity } from 'ethereum-waffle'
 import { ethers } from 'hardhat'
 import { toBigNumber } from './lib/number'
-import {
-	MockDev,
-	MockDev__factory,
-	ConvertOnTransfer,
-} from '../typechain-types'
+import { MockDev, ConvertOnTransfer } from '../typechain-types'
 
 use(solidity)
 
@@ -22,9 +18,7 @@ describe('ConvertOnTransfer', () => {
 	beforeEach(async () => {
 		;[deployer, user, user2] = await ethers.getSigners()
 
-		const mockDevFactory = (await ethers.getContractFactory(
-			'MockDev'
-		)) as MockDev__factory
+		const mockDevFactory = await ethers.getContractFactory('MockDev')
 		mockDev = await mockDevFactory.deploy()
 
 		const convertOnTransferFactory = await ethers.getContractFactory(
