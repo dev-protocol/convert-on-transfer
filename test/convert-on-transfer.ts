@@ -7,8 +7,7 @@ import {
 	MockDev,
 	MockDev__factory,
 	ConvertOnTransfer,
-	ConvertOnTransfer__factory,
-} from '../typechain'
+} from '../typechain-types'
 
 use(solidity)
 
@@ -28,9 +27,9 @@ describe('ConvertOnTransfer', () => {
 		)) as MockDev__factory
 		mockDev = await mockDevFactory.deploy()
 
-		const convertOnTransferFactory = (await ethers.getContractFactory(
+		const convertOnTransferFactory = await ethers.getContractFactory(
 			'ConvertOnTransfer'
-		)) as ConvertOnTransfer__factory
+		)
 		convertOnTransfer = await convertOnTransferFactory.deploy(
 			mockDev.address,
 			true
