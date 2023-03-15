@@ -1543,12 +1543,11 @@
     ethers "^5.0.2"
 
 "@typechain/hardhat@^6.0.0":
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/@typechain/hardhat/-/hardhat-6.0.0.tgz#5e305641de67276efbfaa8c37c78e38f22b22ef4"
-  integrity sha512-AnhwODKHxx3+st5uc1j2NQh79Lv2OuvDQe4dKn8ZxhqYsAsTPnHTLBeI8KPZ+mfdE7v13D2QYssRTIkkGhK35A==
+  version "6.1.5"
+  resolved "https://registry.yarnpkg.com/@typechain/hardhat/-/hardhat-6.1.5.tgz#caad58a1d3e9cd88061a584eb4f4fa763d5dcad1"
+  integrity sha512-lg7LW4qDZpxFMknp3Xool61Fg6Lays8F8TXdFGBG+MxyYcYU5795P1U2XdStuzGq9S2Dzdgh+1jGww9wvZ6r4Q==
   dependencies:
     fs-extra "^9.1.0"
-    lodash "^4.17.15"
 
 "@types/abstract-leveldown@*":
   version "5.0.2"
@@ -5446,10 +5445,15 @@ got@^7.1.0:
     url-parse-lax "^1.0.0"
     url-to-options "^1.0.1"
 
-graceful-fs@^4.1.11, graceful-fs@^4.1.2, graceful-fs@^4.1.6, graceful-fs@^4.1.9, graceful-fs@^4.2.0, graceful-fs@^4.2.4:
+graceful-fs@^4.1.11, graceful-fs@^4.1.2, graceful-fs@^4.1.9, graceful-fs@^4.2.4:
   version "4.2.8"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.8.tgz#e412b8d33f5e006593cbd3cee6df9f2cebbe802a"
   integrity sha512-qkIilPUYcNhJpd33n0GBXTB1MMPp14TxEsEs0pTrsSVucApsYzW5V+Q8Qxhik6KU3evy+qkAAowTByymK0avdg==
+
+graceful-fs@^4.1.6, graceful-fs@^4.2.0:
+  version "4.2.10"
+  resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.10.tgz#147d3a006da4ca3ce14728c7aefc287c367d7a6c"
+  integrity sha512-9ByhssR2fPVsNZj478qUUbKfmL0+t5BDVyjShtyZZLiK7ZDAArFFfopyOTj0M05wE2tJPisA4iTnnXl2YoPvOA==
 
 grapheme-splitter@^1.0.4:
   version "1.0.4"
